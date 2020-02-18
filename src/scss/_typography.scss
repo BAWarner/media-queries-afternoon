@@ -1,0 +1,58 @@
+h1,.h1{
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 50px;
+    margin-bottom: 25px;
+}
+h2,.h2{
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+h4,.h4{
+    font-size: 1.5rem;
+    line-height: 1.2;
+    margin: 15px 0; 
+}
+header{
+    .sub-header{
+        font-size: 22px;
+        line-height: 22px;
+        margin-bottom: 25px;
+    }
+}
+
+.sub-header{
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    font-family: $body-font;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+.text-center{
+    text-align: center;
+}
+.primary{
+    color: $primary;
+}
+.white{
+    color: $white;
+}
+.muted{
+    color: $dark-gray;
+}
+p{
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: $body-font;
+    line-height: 1.75;
+    margin-bottom: 1rem;
+}
+
+.italic{
+    font-style: italic;
+}

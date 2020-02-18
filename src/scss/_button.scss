@@ -1,0 +1,39 @@
+button{
+    background-color: $primary;
+    border-color: $primary;
+    border-radius: 3px;
+    font-size: 18px;
+    color: $white;
+    text-transform: uppercase;
+    font-family: $header-font;
+    position: relative;
+    font-weight: 700;
+
+    &.btn-large{
+        padding: 20px 40px;
+    }
+    &.menu-button{
+        font-size: 12px;
+        padding: 13px;
+        border: unset;
+        border-radius: 0.25rem;
+        line-height: 1;
+
+        .hamburger{
+            display: inline-block;
+            margin-left: 6px;
+            div{
+                width: 10px;
+                height: 2px;
+                background-color: $white;
+                margin: 0 0 2px;
+                &:not(:first-child){
+                    margin: 2px 0;
+                }
+                &:last-child{
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}

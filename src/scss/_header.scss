@@ -1,0 +1,95 @@
+.logo{
+    font-family: $logo-font;
+    color: $primary;
+    font-size: 20px;
+    @media (min-width: 991px){
+        font-size: 1.75rem;
+    }
+    font-weight: 700;
+    transition: all 0.3s;
+}
+.desktop-menu{
+    font-size: 90%;
+    font-family: $header-font;
+    font-weight: 400;
+    padding: .75em 0;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $white;
+
+    li{
+        width: fit-content;
+    }
+}
+menu{
+    display: none;
+    position: relative;
+    background-color: $black;
+    width: 100%;
+    padding-left: 15px;
+    transform: translateY(-100%);
+    transition: transform 0.25s linear;
+
+    ul{
+        padding-left: 10px;
+        li{
+            @extend .desktop-menu
+        }
+    }
+
+
+    &.open{
+        transform: translateY(-1px);
+    }
+    @media (max-width: 991px){
+        display: block;
+    }
+
+}
+nav{
+    position: relative;
+    z-index: 10;
+    background-color: transparent;
+
+    @media(max-width: 991px){
+        background-color: $black;
+    }
+    .container{
+        justify-content: space-between;
+    }
+    padding: .5rem 1rem;
+    overflow: hidden;
+}
+
+
+header{
+    background-image: url('../assets/img/asset\ 23.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 95vh;
+    @media (min-width: 767px) and (max-width: 991px){
+        height: 75vh;
+        padding: 110px 0 100px;
+    }
+    @media (max-width: 766px){
+        padding: 75px 0;
+        height: 50vh;
+    }
+}
+
+@media (min-width: 991px){
+    .height-54{
+        min-height: 54px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        &.sticky{
+            transition: background 0.1s,padding-top .3s,padding-bottom .3s;
+            padding: 0;
+            background-color: $black !important;
+        
+            .logo{
+                font-size: 1.25rem;
+            }
+        }
+    }
+}
