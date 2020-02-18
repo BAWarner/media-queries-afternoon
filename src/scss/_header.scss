@@ -19,6 +19,7 @@
 
     li{
         width: fit-content;
+        cursor: pointer;
     }
 }
 menu{
@@ -33,6 +34,7 @@ menu{
     ul{
         padding-left: 10px;
         li{
+            cursor: pointer;
             @extend .desktop-menu
         }
     }
